@@ -1,11 +1,16 @@
-<template lang="">
+<template>
     <div>
-        <h1>Header</h1>
+        <ul>
+            <router-link to="/">Home</router-link>
+            &nbsp;
+            <router-link to="/about">About</router-link>
+        </ul>
     </div>
 </template>
 <script>
 export default {
     name: 'Header',
+    methods: {},
 };
 </script>
-<style lang=""></style>
+<style></style>
