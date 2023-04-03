@@ -1,17 +1,16 @@
 <template>
     <div>
-        <Header></Header>
+        <RouterView name="Header"></RouterView>
         <ParentVue></ParentVue>
         <router-view />
+        <RouterView name="Footer"></RouterView>
     </div>
 </template>
 <script>
-import Header from './components/Header.vue';
 import ParentVue from './components/Parent.vue';
-
 export default {
     name: 'App',
-    components: { Header, ParentVue },
+    components: { ParentVue },
     methods: {},
 };
 </script>
